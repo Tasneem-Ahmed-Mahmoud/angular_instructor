@@ -29,3 +29,11 @@
 .navbar-toggler{
   background-color: var(--sec-color);
 }
+
+
+
+.active
+{
+background:var(--sec-color)  ;
+border-radius: 4px;
+}

@@ -9,6 +9,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthModule } from './auth/auth.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { InstructorModule } from './instructor/instructor.module';
+import { HomeComponent } from './home/home.component';
 // import { RouterModule } from '@angular/router';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
@@ -16,7 +17,8 @@ import { InstructorModule } from './instructor/instructor.module';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -4,13 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { AuthonGuard } from './authon.guard';
+import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './instructor/profile/profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
   const routes: Routes = [
+    {path:'',redirectTo:"/home" , pathMatch:'full'},
   {path:"register", component:RegisterComponent},
   {path:"login",component:LoginComponent},
-  // {path:'home', component: homeComponent,canActivate:[AuthonGuard]},
+  {path:'home', component: HomeComponent,canActivate:[AuthonGuard]},
   {path:'profile',component:ProfileComponent},
 
   {path:"**",component:NotFoundComponent}

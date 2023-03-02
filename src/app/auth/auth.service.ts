@@ -26,6 +26,7 @@ logout(){
 this.userToken.next(null);
 this.router.navigate(['/login'])
 }
+
 register(formData:object ):Observable<any>{
  return  this.httpClient.post(`http://127.0.0.1:8000/api/register`,formData)
 }

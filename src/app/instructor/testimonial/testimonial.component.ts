@@ -1,11 +1,27 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { FormControl, FormGroup } from '@angular/forms';
+import { TestimonialsService } from '../services/testimonials.service';
+
 @Component({
   selector: 'app-testimonial',
   templateUrl: './testimonial.component.html',
   styleUrls: ['./testimonial.component.css']
 })
 export class TestimonialComponent {
+
+constructor(private testimonialsService:TestimonialsService){}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
